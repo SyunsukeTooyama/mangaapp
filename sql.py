@@ -114,7 +114,7 @@ host = '120.75.105.16'
 localhost='localhost'
 db_name = 'mangaapp'
 
-engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{localhost}/{db_name}")
+engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{db_name}")
 
 Base = declarative_base()
 
